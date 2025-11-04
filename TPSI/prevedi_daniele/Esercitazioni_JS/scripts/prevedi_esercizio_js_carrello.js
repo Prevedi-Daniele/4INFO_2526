@@ -3,7 +3,7 @@ let tabellaTotalePresente = false
 
 function calcolaImportoRiga(id){
     let riga = document.getElementsByClassName(id)
-    riga[0].children[3].innerText = Number(riga[0].children[1].value) * Number(riga[0].children[2])
+    riga[0].children[3].innerText = Number(riga[0].children[1].children[0].value) * Number(riga[0].children[2].innerText)
 }
 
 
@@ -74,9 +74,10 @@ function mostraTotale(){
 
 
 function elimina(el){
-    const idPulsante = el.srcElement.classList[0]
+    console.log("caata")
+    const idPulsante = el.classList[0]
     let trRemove = document.getElementsByClassName(idPulsante)
-    trRemove[0].remove
+    trRemove[0].remove()
 }
 
 function aggiungi(){
@@ -106,7 +107,7 @@ function aggiungi(){
         spanElimina.classList.add("icon_remove")
         spanElimina.innerText = "remove_shopping_cart"
 
-        campoQty.addEventListener("change", aggiornaTotali)
+        campoQty.addEventListener("input", aggiornaTotali)
         tdElimina.addEventListener("click", elimina)
 
         tdElimina.classList.add(id)
@@ -125,7 +126,7 @@ function aggiungi(){
         tdNome.innerText = nomeProdottoVal
         campoQty.value = quantitaVal
         tdCost.innerText = costoValue
-        tdImporto.innerText = calcolaImportoRiga(id)
+        calcolaImportoRiga(id)
 
         nomeProdottoObj.value = ""
         quantitaObj.value = ""
