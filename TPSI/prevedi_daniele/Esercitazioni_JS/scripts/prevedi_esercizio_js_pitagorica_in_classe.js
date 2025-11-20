@@ -14,7 +14,14 @@ function generaPitagorica(){
             let cella = document.createElement("td")        // Crea un nuovo tag HTML che passo per stringa
             if(r != 0 || c != 0){
                 cella.innerText = `${r} - ${c}`
+                if(r == 0){
+                    cella.innerText = c
+                }
+                if(c == 0){
+                    cella.innerText = r
+                }
             }
+
             riga.append(cella)                              // Aggiungo la cella alla riga
 
         }
