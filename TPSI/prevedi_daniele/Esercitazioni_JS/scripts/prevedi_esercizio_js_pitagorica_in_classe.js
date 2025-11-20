@@ -34,7 +34,7 @@ function generaPitagorica(){
     }
 }
 
-function calcolaMultipli(){
+function calcolaMultipliDivisori(tipo){
     let numero = document.getElementById("numero").value
     let tabella = document.getElementById("pitagorica")
     let righe = tabella.children
@@ -51,34 +51,16 @@ function calcolaMultipli(){
         for(let c = 1; c < celle.length; c++){
             let cella = celle[c]
             let cellaValue = Number(cella.innerText)
-
-            if(cellaValue % numero == 0){
-                cella.classList.add("multiplo")
+            
+            if(tipo){                                       // Se "tipo" è uguale a true
+                if(cellaValue % numero == 0){
+                    cella.classList.add("multiplo")
+                }    
             }
-        }
-    }
-}
-
-function calcolaDivisori(){
-    let numero = document.getElementById("numero").value
-    let tabella = document.getElementById("pitagorica")
-    let righe = tabella.children
-
-    if(numero <= 0){
-        alert("Inserisci un numero positivo.")
-        return
-    }
-
-    for(let r = 1; r < righe.length; r++){
-        let riga = righe[r]
-        let celle = riga.children
-        
-        for(let c = 1; c < celle.length; c++){
-            let cella = celle[c]
-            let cellaValue = Number(cella.innerText)
-
-            if(numero % cellaValue == 0){
-                cella.classList.add("divisore")
+            else{
+                if(numero % cellaValue == 0){
+                    cella.classList.add("divisore")
+                }    
             }
         }
     }
