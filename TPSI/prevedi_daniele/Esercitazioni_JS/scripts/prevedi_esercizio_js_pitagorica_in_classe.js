@@ -33,3 +33,11 @@ function generaPitagorica(){
         }
     }
 }
+
+function calcolaMultipli(){
+    console.log("Multipli")
+}
+
+function calcolaDivisori(){
+    console.log("Divisori")
+}
