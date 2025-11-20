@@ -60,5 +60,24 @@ function calcolaMultipli(){
 
 function calcolaDivisori(){
     let numero = document.getElementById("numero").value
-    console.log(numero)
+    let tabella = document.getElementById("pitagorica")
+    let righe = tabella.children
+
+    if(numero <= 0){
+        alert("Inserisci un numero positivo.")
+        return
+    }
+
+    for(let r = 1; r < righe.length; r++){
+        let riga = righe[r]
+        let celle = riga.children
+        for(let c = 1; c < celle.length; c++){
+            let cella = celle[c]
+            let cellaValue = Number(cella.innerText)
+
+            if(numero % cellaValue == 0){
+                cella.classList.add("divisore")
+            }
+        }
+    }
 }
