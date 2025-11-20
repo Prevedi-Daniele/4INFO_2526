@@ -35,9 +35,11 @@ function generaPitagorica(){
 }
 
 function calcolaMultipli(){
-    console.log("Multipli")
+    let numero = document.getElementById("numero").value
+    console.log(numero)
 }
 
 function calcolaDivisori(){
-    console.log("Divisori")
+    let numero = document.getElementById("numero").value
+    console.log(numero)
 }
