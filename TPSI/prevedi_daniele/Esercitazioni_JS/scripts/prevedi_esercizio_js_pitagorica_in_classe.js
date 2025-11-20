@@ -16,9 +16,11 @@ function generaPitagorica(){
                 cella.innerText = `${r} - ${c}`
                 if(r == 0){
                     cella.innerText = c
+                    cella.classList.add("header")
                 }
                 if(c == 0){
                     cella.innerText = r
+                    cella.classList.add("header")
                 }
             }
 
