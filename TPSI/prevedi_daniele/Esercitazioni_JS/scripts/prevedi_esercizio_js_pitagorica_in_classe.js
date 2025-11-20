@@ -12,7 +12,7 @@ function generaPitagorica(){
         tabella.append(riga)                                // Aggiungo la riga alla tabella
         for(let c = 0; c <= colonne; c++){
             let cella = document.createElement("td")        // Crea un nuovo tag HTML che passo per stringa
-            if(r != 0 && c != 0){
+            if(r != 0 || c != 0){
                 cella.innerText = `${r} - ${c}`
             }
             riga.append(cella)                              // Aggiungo la cella alla riga
