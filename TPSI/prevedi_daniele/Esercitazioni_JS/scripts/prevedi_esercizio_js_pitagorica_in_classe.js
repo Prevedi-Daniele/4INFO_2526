@@ -5,7 +5,8 @@ function generaPitagorica(){
         alert("Inserisci un numero valido, tra 4 e 12.")
         return
     }
-    else{
-        console.log("Numero valido")
+
+    for(let r = 0; r < colonne; r++){
+        console.log(r)
     }
 }
