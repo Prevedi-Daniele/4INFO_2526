@@ -8,7 +8,8 @@ function generaPitagorica(){
 
     for(let r = 0; r <= colonne; r++){
         for(let c = 0; c <= colonne; c++){
-            console.log(r, c)
+            let cella = document.createElement("td") // Crea un nuovo tag HTML che passo per stringa
+            cella.innerText = `${r} - ${c}`
         }
     }
 }
