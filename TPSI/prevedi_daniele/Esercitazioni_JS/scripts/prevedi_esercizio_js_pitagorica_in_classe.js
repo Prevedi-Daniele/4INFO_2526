@@ -6,7 +6,9 @@ function generaPitagorica(){
         return
     }
 
-    for(let r = 0; r < colonne; r++){
-        console.log(r)
+    for(let r = 0; r <= colonne; r++){
+        for(let c = 0; c <= colonne; c++){
+            console.log(r, c)
+        }
     }
 }
