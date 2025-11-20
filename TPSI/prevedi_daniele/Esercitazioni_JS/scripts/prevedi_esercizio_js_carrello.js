@@ -74,8 +74,8 @@ function mostraTotale(){
 
 
 function elimina(el){
-    console.log("caata")
     const idPulsante = el.classList[0]
+    console.log("caata")
     let trRemove = document.getElementsByClassName(idPulsante)
     trRemove[0].remove()
 }
@@ -103,12 +103,13 @@ function aggiungi(){
 
         campoQty.type = "number"
         campoQty.min = "1"
+        spanElimina.classList.add(id)
         spanElimina.classList.add("material-icons")
         spanElimina.classList.add("icon_remove")
         spanElimina.innerText = "remove_shopping_cart"
 
         campoQty.addEventListener("input", aggiornaTotali)
-        tdElimina.addEventListener("click", elimina)
+        spanElimina.addEventListener("click", elimina)
 
         tdElimina.classList.add(id)
         campoQty.classList.add(id)
