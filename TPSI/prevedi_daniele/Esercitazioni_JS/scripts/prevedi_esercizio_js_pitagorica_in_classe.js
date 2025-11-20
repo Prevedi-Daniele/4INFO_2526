@@ -39,6 +39,11 @@ function calcolaMultipli(){
     let tabella = document.getElementById("pitagorica")
     let righe = tabella.children
 
+    if(numero <= 0){
+        alert("Inserisci un numero positivo.")
+        return
+    }
+
     for(let r = 1; r < righe.length; r++){
         let riga = righe[r]
         let celle = riga.children
@@ -51,7 +56,6 @@ function calcolaMultipli(){
             }
         }
     }
-    console.log(numero)
 }
 
 function calcolaDivisori(){
