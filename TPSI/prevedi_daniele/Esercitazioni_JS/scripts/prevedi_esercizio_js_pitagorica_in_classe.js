@@ -36,6 +36,14 @@ function generaPitagorica(){
 
 function calcolaMultipli(){
     let numero = document.getElementById("numero").value
+    let tabella = document.getElementById("pitagorica")
+    let righe = tabella.children
+
+    for(let r = 0; r < righe.length; r++){
+        let riga = righe[r]
+        let celle = riga.children
+        console.log(celle)
+    }
     console.log(numero)
 }
 
