@@ -10,15 +10,19 @@ function generaPitagorica(){
     for(let r = 0; r <= colonne; r++){
         let riga = document.createElement("tr")
         tabella.append(riga)                                // Aggiungo la riga alla tabella
+        
         for(let c = 0; c <= colonne; c++){
             let cella = document.createElement("td")        // Crea un nuovo tag HTML che passo per stringa
+            
             if(r != 0 || c != 0){
-                cella.innerText = r * c
-                if(r == 0){
+                cella.innerText = r * c                     // Se è una cella "normale"
+                
+                if(r == 0){                                 // Se è l'header della colonna
                     cella.innerText = c
                     cella.classList.add("header")
                 }
-                if(c == 0){
+                
+                if(c == 0){                                 // Se è l'header della riga
                     cella.innerText = r
                     cella.classList.add("header")
                 }
