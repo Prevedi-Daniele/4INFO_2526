@@ -50,15 +50,15 @@ function calcolaMultipliDivisori(tipo){
         
         for(let c = 1; c < celle.length; c++){
             let cella = celle[c]
-            let cellaValue = Number(cella.innerText)
+            let cellaValue = Number(cella.innerText)        // Scansione dei valori
             
             if(tipo){                                       // Se "tipo" è uguale a true
-                if(cellaValue % numero == 0){
+                if(cellaValue % numero == 0){               // Per i multipli
                     cella.classList.add("multiplo")
                 }    
             }
-            else{
-                if(numero % cellaValue == 0){
+            else{                                           // Altrimenti ("tipo", quindi, è uguale a false)
+                if(numero % cellaValue == 0){               // Per i divisori
                     cella.classList.add("divisore")
                 }    
             }
