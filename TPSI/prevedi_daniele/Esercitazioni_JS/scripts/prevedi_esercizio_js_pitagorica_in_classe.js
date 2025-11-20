@@ -39,14 +39,16 @@ function calcolaMultipli(){
     let tabella = document.getElementById("pitagorica")
     let righe = tabella.children
 
-    for(let r = 0; r < righe.length; r++){
+    for(let r = 1; r < righe.length; r++){
         let riga = righe[r]
         let celle = riga.children
-        for(let c = 0; c < celle.length; c++){
+        for(let c = 1; c < celle.length; c++){
             let cella = celle[c]
             let cellaValue = Number(cella.innerText)
 
-            console.log(cellaValue)
+            if(cellaValue % numero == 0){
+                cella.classList.add("multiplo")
+            }
         }
     }
     console.log(numero)
