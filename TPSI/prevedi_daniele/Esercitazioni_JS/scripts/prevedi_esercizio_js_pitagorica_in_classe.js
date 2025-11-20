@@ -42,7 +42,12 @@ function calcolaMultipli(){
     for(let r = 0; r < righe.length; r++){
         let riga = righe[r]
         let celle = riga.children
-        console.log(celle)
+        for(let c = 0; c < celle.length; c++){
+            let cella = celle[c]
+            let cellaValue = Number(cella.innerText)
+
+            console.log(cellaValue)
+        }
     }
     console.log(numero)
 }
