@@ -13,7 +13,7 @@ function generaPitagorica(){
         for(let c = 0; c <= colonne; c++){
             let cella = document.createElement("td")        // Crea un nuovo tag HTML che passo per stringa
             if(r != 0 || c != 0){
-                cella.innerText = `${r} - ${c}`
+                cella.innerText = r * c
                 if(r == 0){
                     cella.innerText = c
                     cella.classList.add("header")
