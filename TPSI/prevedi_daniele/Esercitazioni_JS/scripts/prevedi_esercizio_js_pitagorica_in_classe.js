@@ -47,6 +47,7 @@ function calcolaMultipli(){
     for(let r = 1; r < righe.length; r++){
         let riga = righe[r]
         let celle = riga.children
+        
         for(let c = 1; c < celle.length; c++){
             let cella = celle[c]
             let cellaValue = Number(cella.innerText)
@@ -71,6 +72,7 @@ function calcolaDivisori(){
     for(let r = 1; r < righe.length; r++){
         let riga = righe[r]
         let celle = riga.children
+        
         for(let c = 1; c < celle.length; c++){
             let cella = celle[c]
             let cellaValue = Number(cella.innerText)
