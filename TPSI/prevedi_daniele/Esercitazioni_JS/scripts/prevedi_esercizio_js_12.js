@@ -9,7 +9,9 @@ let Animale = function(specie, famiglia, colore) {
         console.log(`L'animale è della famiglia ${this.famiglia}`)
     }),
     (this.enumera = function (){
-        console.log(`${this.specie}, ${this.famiglia}, ${this.colore}`)
+        for (chiave in this){
+            console.log(`${chiave}`)
+        }
     })
 }
 
@@ -24,7 +26,9 @@ let Automobile = function (modello, marca, anno) {
         console.log(`L'auto ${this.marca} ${this.modello} sta accelerando.`)
     }),
     (this.enumera = function (){
-        console.log(`${this.modello}, ${this.marca}, ${this.anno}`)
+        for (chiave in this){
+            console.log(`${chiave}`)
+        }
     })
 }
 
@@ -39,7 +43,9 @@ let Poligono = function (base, perimetro, area) {
         console.log(`Il poligono è stato distrutto`)
     }),
     (this.enumera = function (){
-        console.log(`${this.base}, ${this.perimetro}, ${this.area}`)
+        for (chiave in this){
+            console.log(`${chiave}`)
+        }
     })
 }
 
