@@ -1,11 +1,11 @@
-function sommaTuttiNumeri(max){
-    if (typeof(max) == String){
-        max = Number(max)
+function sommaTuttiNumeri(n){
+    if (typeof(n) == String){
+        n = Number(n)
     }
 
     let somma = 0
 
-    for (let i = 0; i < max; i++) {
+    for (let i = 0; i < n; i++) {
         somma = somma + i
     }
 
