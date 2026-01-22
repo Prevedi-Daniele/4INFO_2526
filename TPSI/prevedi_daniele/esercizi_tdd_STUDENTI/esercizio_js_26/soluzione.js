@@ -1,3 +1,3 @@
 export const capitalize = (str) => {
-    //INSERISCI QUI IL TUO CODICE
+    return `${str.charAt(0).toUpperCase()}${str.slice(1)}`
 }

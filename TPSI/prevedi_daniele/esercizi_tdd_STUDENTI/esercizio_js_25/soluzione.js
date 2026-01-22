@@ -1,3 +1,4 @@
 export const untokenize = (str) => {
-   //INSERISCI QUI IL TUO CODICE
+   str = str.replaceAll(" ", "-")
+   return str
 };
