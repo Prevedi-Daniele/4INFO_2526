@@ -4,9 +4,17 @@ export const capitalize_all = (str) => {
       str[i][0] = str[i].charAt(0).toUpperCase()
    }
 
-   for (const parola of object) {
+   let strOut = ""
+
+   for (const parola of str) {
+      if (str.indexOf(parola) != str.length - 1) {
+         strOut = strOut.concat(parola, " ")
+      }
+      else {         
+         strOut = strOut.concat(parola)
+      }
       
    }
-   return 
+   return strOut
 }
 
