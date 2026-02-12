@@ -10,4 +10,7 @@ export const special_concat = (str1, str2) => {
    let strOut = ""
    strOut.concat(str2.charAt(0), str1.slice(1), str1.charAt(0), str2.slice(1))
    return strOut
+
+   // if (!str1 || !str2 || str1.split(" ").length > 1 || str2.split(" ").length > 1) return "parole non adatte"
+   // return `${str2.slice(0, 2) + str1. --- continuare}`
 };

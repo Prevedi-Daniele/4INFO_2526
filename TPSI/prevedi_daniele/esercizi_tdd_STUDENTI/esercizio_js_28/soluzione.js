@@ -1,11 +1,11 @@
 export const upper_case = (str) => {
-    for (let i = 0; i < str.length; i++) {
-        if (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 122) {
-            let temp = str.charCodeAt(i) - 32
-            let hex = temp.toString(16).toUpperCase()
-            str[i] = "\u{hex}";
-        }
+    let res = ""
+
+    for (let c of str){
+        let code = c.charCodeAt(0)
+        res = res.concat((code >= 97 && code <= 122) ? String.fromCharCode(code - 32) : String.fromCharCode(code))
     }
-    return str;
+
+    return res
 }
 
