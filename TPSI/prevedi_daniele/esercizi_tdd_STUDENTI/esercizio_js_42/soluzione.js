@@ -1,4 +1,7 @@
 export const swap = (l, n, m) => {
-    let out = l.splice(m,0,n)
-    return out
+    let x = l[n]
+    l.splice(n, 1) // Toglie l'elemento alla posizione n
+    l.splice(m >= 0 ? m : m+1, 0, l[n])
+
+    return l
 };
