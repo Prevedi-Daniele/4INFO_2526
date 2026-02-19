@@ -1,3 +1,11 @@
 export const reverse = (l) => {
-    //INSERISCI QUI IL TUO CODICE
+    let lNuovo = []
+
+    for (let el of l){
+      lNuovo.unshift(el)
+    }
+    
+    lNuovo.splice(0,0,l.reduce((acc, current) => acc + current, 0))
+
+    return lNuovo
 }

@@ -1,4 +1,9 @@
 export const reverse = (l) => {
-    //INSERISCI QUI IL TUO CODICE
-};
+  let lNuovo = []
 
+  for (let el of l){
+    lNuovo.unshift(el)
+  }
+
+  return lNuovo
+};
