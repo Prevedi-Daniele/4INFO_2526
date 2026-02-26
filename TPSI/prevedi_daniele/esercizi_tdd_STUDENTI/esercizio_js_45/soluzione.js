@@ -1,3 +1,4 @@
 export const only_upper = (s) => {
-    //INSERISCI QUI IL TUO CODICE
+    let a = s.split("")
+    return a.filter((carattere) => carattere.charCodeAt(0) >= 65 && carattere.charCodeAt(0) <= 90)
 };
