@@ -1,3 +1,3 @@
 export const names = (studenti) => {
-   //INSERISCI QUI IL TUO CODICE
+   return studenti.map(item => item.nome)
 }
