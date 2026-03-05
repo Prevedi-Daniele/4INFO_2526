@@ -1,3 +1,4 @@
 export const sub_arr = (l, n) => {
-   //INSERISCI QUI IL TUO CODICE
+   n = n < 0 ? 0 : n
+   return l.slice(0, n)
 };
