@@ -1,3 +1,8 @@
 export const unique_random_numbers = (n, m) => {
-   //INSERISCI QUI IL TUO CODICE
+   let numeri = new Set()
+   
+   while (numeri.size < n)
+      numeri.add(Math.ceil(Math.random() * m))
+
+   return Array.from(numeri).sort()
 }

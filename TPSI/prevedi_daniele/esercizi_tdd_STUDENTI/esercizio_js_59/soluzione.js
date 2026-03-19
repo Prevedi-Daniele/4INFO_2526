@@ -1,3 +1,4 @@
 export function deduplicate(arr) {
-    //INSERISCI QUI IL TUO CODICE
+    let temp = new Set(arr)
+    return Array.from(temp.keys())
 }
